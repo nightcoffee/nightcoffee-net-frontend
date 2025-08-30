@@ -1,5 +1,5 @@
 {
-  "name": "iedon-net",
+  "name": "nightcoffee-net",
   "version": "2.2.1",
   "type": "module",
   "scripts": {
@@ -15,7 +15,6 @@
     "md5": "^2.3.0",
     "resolve-accept-language": "^3.1.12",
     "unplugin-vue-components": "^29.0.0",
-    "vite-plugin-vercel": "^9.0.7",
     "vue": "^3.5.18",
     "vue-echarts": "^7.0.3",
     "vue-i18n": "^11.1.11",
