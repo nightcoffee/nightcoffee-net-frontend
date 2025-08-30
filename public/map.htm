@@ -4,7 +4,7 @@
         <base target="_top">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">  
-        <title>IEDON-NET NODE MAP</title>
+        <title>NIGHTCOFFEE-NET NODE MAP</title>
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
         <script src="https://cdn.jsdelivr.net/npm/leaflet-curve@1.0.0/leaflet.curve.min.js"></script>
@@ -69,78 +69,19 @@
         <div id="map" style="width: 100%; height: 100%"></div>
         <script>
             const nodes = {
-                'CN-CZX': {
-                    name: '🇨🇳 <b>Changzhou, Jiangsu, China</b><br/><small>172.23.91.121, fd42:4242:2189:c3::1</small>',
-                    nodeId: 121,
-                    coordinates: [ 119.973999, 31.811001 ]
-                },
                 'JP-TYO': {
-                    name: '🇯🇵 <b>(Great Tokyo Area) Inzai, Chiba, Japan</b><br/><small>172.23.91.116, fd42:4242:2189:ee::1</small>',
-                    nodeId: 116,
+                    name: '🇯🇵 <b>Tokyo, JP</b><br/><small172.23.221.34, fd82:9700:355e:100::1</small>',
+                    nodeId: 100,
                     coordinates: [ 140.14581540, 35.83234850 ]
                 },
-                'JP-KOT': {
-                    name: '🇯🇵 <b>Koto, Tokyo, Japan</b><br/><small>172.23.91.115, fd42:4242:2189:115::1</small>',
-                    nodeId: 115,
-                    coordinates: [ 139.817413, 35.672855 ]
-                },
-                'US-LAX': {
-                    name: '🇺🇸 <b>Los Angeles, CA, US</b><br/><small>172.23.91.114, fd42:4242:2189:ef::1</small>',
-                    nodeId: 114,
-                    coordinates: [ -118.243683, 34.052235 ]
-                },
                 'US-SJC': {
-                    name: '🇺🇸 <b>San Jose, CA, US</b><br/><small>172.23.91.117, fd42:4242:2189:e8::1</small>',
-                    nodeId: 117,
+                    name: '🇺🇸 <b>San Jose, CA, US</b><br/><small>172.23.221.33, fd82:9700:355e:101::1</small>',
+                    nodeId: 101,
                     coordinates: [ -121.886329, 37.338208 ]
-                },
-                'DE-FRA': {
-                    name: '🇩🇪 <b>Frankfurt, Germany</b><br/><small>172.23.91.125, fd42:4242:2189:e9::1</small>',
-                    nodeId: 125,
-                    coordinates: [ 8.682127, 50.110922 ]
-                },
-                'CN-NTG': {
-                    name: '🇨🇳 <b>Nantong, Jiangsu, China</b><br/><small>172.23.91.44, fd42:4242:2189:a0::44</small>',
-                    nodeId: 44,
-                    coordinates: [ 120.865, 31.9661 ]
-                },
-                'CN-SHA': {
-                    name: '🇨🇳 <b>Shanghai, China</b><br/><small>172.23.91.113, fd42:4242:2189:113::1</small>',
-                    nodeId: 113,
-                    coordinates: [ 121.469170, 31.224361 ]
-                },
-                'HK-HKG': {
-                    name: '🇭🇰 <b>Hong Kong, Hong Kong S.A.R.</b><br/><small>172.23.91.120, fd42:4242:2189:120::1</small>',
-                    nodeId: 120,
-                    coordinates: [ 114.177216, 22.302711 ]
-                },
-                'SG-SIN': {
-                    name: '🇸🇬 <b>Singapore</b><br/><small>172.23.91.119, fd42:4242:2189:119::1</small>',
-                    nodeId: 119,
-                    coordinates: [ 103.989441, 1.359167 ]
-                },
-                'UK-LON': {
-                    name: '🇬🇧 <b>London, United Kingdom</b><br/><small>172.23.91.122, fd42:4242:2189:122::1</small>',
-                    nodeId: 122,
-                    coordinates: [ -0.118092, 51.509865 ]
-                },
-                'US-NYC': {
-                    name: '🇺🇸 <b>Buffalo, NY, US / Near Toronto, ON, CA</b><br/><small>172.23.91.124, fd42:4242:2189:124::1</small>',
-                    nodeId: 124,
-                    coordinates: [ -78.878738, 42.880230 ]
-                },
+                }
             };
             const node_conns = {
-                'CN-NTG': [ 'US-LAX', 'US-SJC', 'DE-FRA', 'JP-TYO', 'JP-KOT', 'HK-HKG', 'SG-SIN', 'CN-CZX', 'CN-SHA' ],
-                'CN-CZX': [ 'US-LAX', 'US-SJC', 'DE-FRA', 'JP-TYO', 'JP-KOT', 'HK-HKG', 'SG-SIN', 'CN-SHA' ],
-                'JP-TYO': [ 'US-LAX', 'US-SJC', 'DE-FRA', 'JP-KOT', 'HK-HKG', 'SG-SIN' ],
-                'US-LAX': [ 'US-SJC', 'DE-FRA', 'HK-HKG', 'SG-SIN' ],
-                'US-SJC': [ 'DE-FRA', 'HK-HKG', 'SG-SIN' ],
-                'US-NYC': [ 'US-LAX', 'US-SJC', 'JP-TYO', 'SG-SIN', 'HK-HKG', 'UK-LON', 'DE-FRA' ],
-                'UK-LON': [ 'US-LAX', 'US-SJC', 'JP-TYO', 'SG-SIN', 'HK-HKG', 'DE-FRA' ],
-                'DE-FRA': [ 'HK-HKG', 'SG-SIN' ],
-                'JP-KOT': [ 'HK-HKG', 'SG-SIN' ],
-                'CN-SHA': [ 'HK-HKG' ]
+                'JP-TYO': [ 'US-SJC']
             };
             const data = [];
             Object.keys(nodes).forEach(key => {
