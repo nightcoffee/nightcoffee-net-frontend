@@ -11,7 +11,7 @@ export default {
     root: '/',
     version: pkg.version,
     package: `${pkg.name}/${pkg.version}`,
-    apiPrefix: 'https://api.dn42.ydkf.me/dn42/peerapi',
+    apiPrefix: 'https://dn42-api.ydkf.me/dn42/peerapi',
     pingIntervalMs: 180000,
     configFallback: {
         netAsn: '4242423508',
@@ -43,3 +43,4 @@ export default {
     metricPageRefreshInterval: 300000, // 5 minutes
 
 }
+
