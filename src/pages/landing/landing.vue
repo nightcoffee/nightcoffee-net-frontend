@@ -30,7 +30,7 @@
                     </div>
                     <div class="hero-logo">
                         <div class="logo-container">
-                            <img src="../../assets/logo_pure.svg" alt="iEdon Logo" width="130" />
+                            <img src="../../assets/logo_pure.png" alt="NightCoffee Logo" width="130" />
                         </div>
                     </div>
                 </div>
