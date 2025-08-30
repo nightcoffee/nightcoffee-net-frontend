@@ -7,8 +7,8 @@ import { locale, setLocale, SupportedLocales, getLocaleName, getLocaleCodeAlias 
 import { loggedIn, themeName } from '../common/helper'
 import { makeRequest, PostMetadaResponse, PostMetadata } from '../common/packetHandler'
 import config from "../config"
-import logoDark from '../assets/logo_dark.svg'
-import logoLight from '../assets/logo.svg'
+import logoDark from '../assets/logo_dark.png'
+import logoLight from '../assets/logo.png'
 
 import { message } from 'ant-design-vue'
 
@@ -318,3 +318,4 @@ const login = () => {
     vertical-align: sub;
 }
 </style>
+
