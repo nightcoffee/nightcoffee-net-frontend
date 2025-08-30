@@ -30,8 +30,8 @@ import 'dayjs/locale/el'
 import 'dayjs/locale/hi'
 import 'dayjs/locale/vi'
 
-export type SupportedLocale = 'en_US' | 'ja_JP' | 'zh_TW' | 'zh_CN' | 'fr_FR' | 'de_DE' | 'es_ES' | 'ko_KR' | 'pt_BR' | 'th_TH' | 'el_GR' | 'hi_IN' | 'vi_VN'
-const SupportedLocales: SupportedLocale[] = [ 'en_US', 'fr_FR', 'de_DE', 'es_ES', 'ja_JP', 'zh_TW', 'zh_CN', 'ko_KR', 'pt_BR', 'th_TH', 'el_GR', 'hi_IN', 'vi_VN' ]
+export type SupportedLocale = 'en_US' | 'zh_CN' 
+const SupportedLocales: SupportedLocale[] = [ 'en_US', 'zh_CN']
 
 interface ObjectMap {
     [index: string]: Object
@@ -91,7 +91,7 @@ const getLocaleName = (locale: SupportedLocale) => {
         case 'es_ES': return 'Español (Spanish)'
         case 'ja_JP': return '日本語 (Japanese)'
         case 'zh_TW': return '繁體中文 (Traditional Chinese)'
-        case 'zh_CN': return '简体字华语 (Simplified Chinese)'
+        case 'zh_CN': return '简体中文 (Simplified Chinese)'
         case 'ko_KR': return '한국어 (Korean)'
         case 'pt_BR': return 'Português (Brasil)'
         case 'th_TH': return 'ไทย (Thai)'
@@ -126,3 +126,4 @@ export {
     SupportedLocales,
     getLocaleCodeAlias
 }
+
