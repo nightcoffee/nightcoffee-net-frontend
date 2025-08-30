@@ -1,9 +1,9 @@
 export default {
   meta: {
-    description: 'iEdon Networks (iEdon-Net), Since 2017. Part of the DN42 Network since March 2019.',
-    keywords: 'DN42,iEdon,4242422189,iEdon-Net,AutoPeer,Peer,NEONETWORK,ICVPN,CHAOSVPN,BGP,automatic peering,peering connection,ASN,peer node,realtime,BGP,network,routing,BIRD,FRR,FRRouting',
-    ogTitle: 'iEdon Networks (iEdon-Net)',
-    ogSiteName: 'iEdon-Net'
+    description: 'NightCoffee Networks (NightCoffee-Net), Since 2022.',
+    keywords: 'DN42,NightCoffee,4242423508,NightCoffee-Net,AutoPeer,Peer,BGP,automatic peering,peering connection,ASN,peer node,realtime,BGP,network,routing,BIRD,FRR,FRRouting',
+    ogTitle: 'NightCoffee Networks (NightCoffee-Net)',
+    ogSiteName: 'NightCoffee-Net'
   },
   header: {
     home: 'Home',
@@ -184,7 +184,7 @@ export default {
       reuseExistingConfig: 'Keep the same endpoint or port assignment(ours) from my previous configuration',
     },
     landing: {
-      subTitle: 'iEdon Networks (iEdon-Net), Since 2017. Part of the DN42 Network since March 2019.',
+      subTitle: 'NightCoffee Networks (NightCoffee-Net), Since 2022.',
       startPeering: 'Instant Peering',
       viewGlobalMap: 'View Global Map',
       globalNetworkMap: 'Global Network Map',

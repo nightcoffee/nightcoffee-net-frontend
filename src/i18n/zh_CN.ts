@@ -1,9 +1,9 @@
 export default {
   meta: {
-    description: 'iEdon Networks (iEdon-Net)，成立于 2017 年。自 2019 年 3 月加入 DN42 网络。',
-    keywords: 'DN42,iEdon,4242422189,iEdon-Net,AutoPeer,Peer,NEONETWORK,ICVPN,CHAOSVPN,BGP,自动对等,对等连接,ASN,对等节点,实时,BGP,网络,路由,BIRD,FRR,FRRouting',
-    ogTitle: 'iEdon Networks (iEdon-Net)',
-    ogSiteName: 'iEdon-Net'
+    description: 'NightCoffee Networks (NightCoffee-Net)，成立于 2022 年。',
+    keywords: 'DN42,NightCoffee,4242423508,NightCoffee-Net,AutoPeer,Peer,BGP,automatic peering,peering connection,ASN,peer node,realtime,BGP,network,routing,BIRD,FRR,FRRouting',
+    ogTitle: 'NightCoffee Networks (NightCoffee-Net)',
+    ogSiteName: 'NightCoffee-Net'
   },
   header: {
     home: '首页',
@@ -183,7 +183,7 @@ export default {
       reuseExistingConfig: '沿用我之前配置的端点或端口（我们的）',
     },
     landing: {
-      subTitle: 'iEdon Networks（iEdon-Net），始于 2017。自 2019 年 3 月加入 DN42 网络。',
+      subTitle: 'NightCoffee Networks（NightCoffee-Net），始于 2022。',
       startPeering: '即时互联',
       viewGlobalMap: '查看全球地图',
       globalNetworkMap: '全球网络地图',

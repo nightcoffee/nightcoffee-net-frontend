@@ -24,7 +24,7 @@ export default {
     openAuthCallback: {
       // Compatibility:
       // will handle token to our type -> kioubit: 'https://iedon.net/openAuth?type=kioubit',
-      kioubit: 'https://iedon.net/openAuth?token=kioubit.dn42',
+      kioubit: '',
     },
     lgUrl: {
       '19f6a4dc-6367-4774-a88d-9e9672ef20ad': 'https://lg.iedon.net/detail/hk-hkg/',
