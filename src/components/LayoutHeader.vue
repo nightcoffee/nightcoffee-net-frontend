@@ -286,7 +286,7 @@ const login = () => {
     padding: 0 15px !important;
   }
   #header .logo {
-    width: 100px !important;
+    width: 64px !important;
     margin-right: 0px !important;
   }
   #header:deep(.menu) {
@@ -294,7 +294,7 @@ const login = () => {
   }
 }
 #header .logo {
-    width: 128px;
+    width: 64px;
     margin-right: 30px;
     cursor: pointer;
 }
@@ -318,4 +318,5 @@ const login = () => {
     vertical-align: sub;
 }
 </style>
+
 
