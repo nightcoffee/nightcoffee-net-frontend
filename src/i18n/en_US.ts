@@ -157,7 +157,7 @@ export default {
       direct: 'Direct Ethernet',
       'mp-bgp': 'Multi-protocol BGP',
       'extended-nexthop': 'Extended Nexthop',
-      step1Introduction: 'This node supports the following features.\nSelect one or more to use.\nNotice that routing policy is just fun for DN42, use BGP communities (65535, 65281) and (65535, 65282) with \"Full Table\" to control routes propagation accurately. ',
+      step1Introduction: 'This node supports the following features.\nSelect one or more to use.\nNotice that routing policy(Not valid for the time being) is just fun for DN42, use BGP communities (65535, 65281) and (65535, 65282) with \"Full Table\" to control routes propagation accurately. ',
       step2Introduction: 'These settings assist with configuring your interface.',
       useIpv4: 'Enable IPv4',
       useIpv6: 'Use IPv6 ULA',
@@ -385,3 +385,4 @@ export default {
     }
   }
 }
+
