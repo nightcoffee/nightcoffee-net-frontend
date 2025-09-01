@@ -71,7 +71,7 @@ const getLocaleName = (locale: SupportedLocale) => {
 const getLocaleCodeAlias = (locale: SupportedLocale) => {
     switch (locale) {
         case 'en_US': default: return 'gb'
-        case 'zh_CN': return 'sg'
+        case 'zh_CN': return 'cn'
     }
 }
 
@@ -82,5 +82,6 @@ export {
     SupportedLocales,
     getLocaleCodeAlias
 }
+
 
 
