@@ -156,7 +156,7 @@ export default {
       direct: '直连以太网',
       'mp-bgp': '多协议 BGP',
       'extended-nexthop': '扩展 Nexthop',
-      step1Introduction: '此节点支持以下功能。\n可多选。路由策略仅供娱乐，建议使用 BGP 社区（65535, 65281）和（65535, 65282）配合“全表”精确控制路由传播。',
+      step1Introduction: '此节点支持以下功能。\n可多选。路由策略(暂时无效)仅供娱乐，建议使用 BGP 社区（65535, 65281）和（65535, 65282）配合“全表”精确控制路由传播。',
       step2Introduction: '以下设置有助于配置您的接口。',
       useIpv4: '启用 IPv4',
       useIpv6: '使用 IPv6 ULA',
@@ -371,3 +371,4 @@ export default {
     }
   }
 }
+
