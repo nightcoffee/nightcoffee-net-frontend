@@ -39,6 +39,7 @@ const isLoading = computed(() => props.loading)
             </a-form-item>
         </a-form>
 
+        <!-- 
         <a-divider class="open-auth" orientation="center">{{ t('pages.signIn.youCanAlso') }}</a-divider>
 
         <form class="kioubit-auth-form" action="https://dn42.g-load.eu/auth/">
@@ -49,6 +50,7 @@ const isLoading = computed(() => props.loading)
                 {{ t('pages.signIn.authWithKioubit') }}
             </button>
         </form>
+        -->
 
         <div class="signup"><a href="https://dn42.dev" target="_blank">{{ t('pages.signIn.signUp') }}</a></div>
     </a-spin>
@@ -80,3 +82,4 @@ const isLoading = computed(() => props.loading)
 }
 .kioubit-btn-dark,.kioubit-btn-light{font-weight:400;font-size:1rem;line-height:1.5;padding:.5em;display:flex;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.kioubit-btn-dark{color:#fff;background-color:#343a40;vertical-align:middle;border:1px solid transparent;border-radius:.4rem;align-items:center}.kioubit-btn-dark:hover{color:#fff;background-color:#651fff;border-color:#1d2124}.kioubit-btn-dark:focus,.kioubit-btn-light:focus{outline:0;box-shadow:0 0 0 .2rem rgba(82,88,93,.5)}.kioubit-btn-light{color:#fafafa;background-color:#2962ff;border:1px solid transparent;border-radius:.4rem;align-items:center}.kioubit-btn-light:hover{color:#fff;background-color:#311b92;border-color:#1d2124}.kioubit-btn-logo{margin-right:.5em;}
 </style>
+
