@@ -70,7 +70,7 @@
         <script>
             const nodes = {
                 'JP-TYO': {
-                    name: '🇯🇵 <b>Tokyo, JP</b><br/><small172.23.221.34, fd82:9700:355e:100::1</small>',
+                    name: '🇯🇵 <b>Tokyo, JP</b><br/><small>172.23.221.34, fd82:9700:355e:100::1</small>',
                     nodeId: 100,
                     coordinates: [ 140.14581540, 35.83234850 ]
                 },
@@ -78,10 +78,16 @@
                     name: '🇺🇸 <b>San Jose, CA, US</b><br/><small>172.23.221.33, fd82:9700:355e:101::1</small>',
                     nodeId: 101,
                     coordinates: [ -121.886329, 37.338208 ]
+                },
+                'NL-AMS': {
+                    name: 'ɴʟ <b>Amsterdam , NL</b><br/><small>172.23.221.35, fd82:9700:355e:102::1</small>',
+                    nodeId: 101,
+                    coordinates: [ 52.354637, 4.8215612 ]
                 }
             };
             const node_conns = {
-                'JP-TYO': [ 'US-SJC']
+                'JP-TYO': ['US-SJC', 'NL-AMS'],
+                'US-SJC': ['NL-AMS']
             };
             const data = [];
             Object.keys(nodes).forEach(key => {
